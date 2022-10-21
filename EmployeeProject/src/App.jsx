@@ -50,6 +50,8 @@ function App() {
     },
   ]);
 
+  //? This function allows you to talk to the child component by get the id from the dictionary and change state between the parent and child
+
   const updateEmployee = (id, newName, newRole) => {
     const updatedEmployee = employees.map((employee) => {
       if (id == employee.id) {

@@ -31,9 +31,8 @@ function EditEmployee(props) {
         <Modal.Body>
           <form
             onSubmit={(e) => {
+              // allow you to prevent page from refreshing
               e.preventDefault();
-              console.log("Hello from Edit employee");
-              console.log(props.id, name, role);
               props.updateEmployee(props.id, name, role);
             }}
             id="editmodal"
